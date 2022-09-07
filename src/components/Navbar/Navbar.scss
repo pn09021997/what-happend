@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+.navbar-custom {
+    font-family: $secondary_font_family;
+    padding: 1.7rem 6.9rem !important;
+
+    .nav-link--cf {
+        margin: 0 2rem; 
+        padding: 0;
+        color: $white;
+    }
+}

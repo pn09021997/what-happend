@@ -1,0 +1,12 @@
+.banner {
+    height: 1000px;
+    position: relative;
+    background-color: #eb470b;
+
+    .demo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

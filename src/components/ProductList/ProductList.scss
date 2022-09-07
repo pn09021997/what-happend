@@ -1,0 +1,8 @@
+.product-list {
+    .col-gap {
+        column-gap: 2rem;
+    }
+    &--col-cf {
+        width: 20%;
+    }
+}

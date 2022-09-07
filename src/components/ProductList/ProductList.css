@@ -1,0 +1,9 @@
+.product-list .col-gap {
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.product-list--col-cf {
+  width: 20%;
+}
+/*# sourceMappingURL=ProductList.css.map */

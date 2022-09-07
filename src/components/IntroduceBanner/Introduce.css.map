@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,iBAAiB,CAAC;EACd,WAAW,ECAS,YAAY,EAAE,UAAU;EDC5C,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,OAAO;EACzB,KAAK,ECAD,IAAI;EDER,QAAQ,EAAE,QAAQ;CAMrB;;AALI,AAAD,0BAAU,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;CACZ",
+    "sources": [
+        "Introduce.scss",
+        "../../App.scss"
+    ],
+    "names": [],
+    "file": "Introduce.css"
+}

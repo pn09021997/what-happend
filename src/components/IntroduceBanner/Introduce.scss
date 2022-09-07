@@ -1,0 +1,15 @@
+@import "../../App.scss";
+
+.introduce-banner {
+    font-family: $secondary_font_family;
+    height: 557px;
+    background-color: #0253b3;
+    color: $white;
+    
+    position: relative;
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 12%;
+    }
+}

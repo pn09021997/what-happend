@@ -1,0 +1,14 @@
+.introduce-banner {
+  font-family: "Montserrat", sans-serif;
+  height: 557px;
+  background-color: #0253b3;
+  color: #fff;
+  position: relative;
+}
+
+.introduce-banner__content {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+}
+/*# sourceMappingURL=Introduce.css.map */

@@ -1,0 +1,14 @@
+.banner {
+  height: 1000px;
+  position: relative;
+  background-color: #eb470b;
+}
+
+.banner .demo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=Banner.css.map */

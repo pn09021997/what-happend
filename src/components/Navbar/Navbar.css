@@ -1,0 +1,11 @@
+.navbar-custom {
+  font-family: "Montserrat", sans-serif;
+  padding: 1.7rem 6.9rem !important;
+}
+
+.navbar-custom .nav-link--cf {
+  margin: 0 2rem;
+  padding: 0;
+  color: #fff;
+}
+/*# sourceMappingURL=Navbar.css.map */
