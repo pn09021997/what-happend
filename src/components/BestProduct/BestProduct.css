@@ -1,6 +1,6 @@
 .best-product {
   position: relative;
-  height: 105vh;
+  height: 120vh;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   background-image: url("../../assets/header/bes-bg.png");
@@ -10,31 +10,169 @@
   color: #f96400;
 }
 
-.best-product__list {
+.best-product .carousel-indicators {
+  display: none;
+}
+
+.best-product__title {
   position: absolute;
-  top: 63%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  padding: 0 9.6rem;
+  top: 5rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.best-product__title h2 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.best-product__title p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+}
+
+.best-product__list .best-product-list--pc-ver {
+  position: absolute;
+  top: 55.5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0;
+  display: block;
+  width: 80%;
+}
+
+.best-product__list .best-product-list--mb-ver {
+  display: none;
+}
+
+.best-product__list .best-product-list--mb-ver .product-item--cf-p {
+  padding: 10%;
 }
 
 .best-product__list .product-item {
   padding: 0;
+  position: relative;
 }
 
 .best-product__list .product-item img {
   width: 100%;
-  height: 50vh;
 }
 
-.best-product .row.no-gutter {
-  margin-left: 0;
-  margin-right: 0;
+.best-product__list .product-item__number-track {
+  background-image: url("../../assets/header/producticon-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: -10%;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  text-decoration: underline;
 }
 
-.best-product .row.no-gutter [class*='col-']:not(:first-child),
-.best-product .row.no-gutter [class*='col-']:not(:last-child) {
-  padding-right: 0;
-  padding-left: 0;
+.best-product__list .product-item__tools {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  color: #000;
+  background-color: #fff;
+  border: solid 3px #020001;
+  font-size: 2rem;
+  font-weight: 800;
+  width: 70%;
+}
+
+.best-product__list .product-item__tools .content {
+  margin: .2rem .2rem .2rem 1rem;
+}
+
+.best-product__list .product-item__tools .btn-go {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  margin: .2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .best-product .best-product-list--pc-ver {
+    display: none;
+  }
+  .best-product .best-product-list--mb-ver {
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 100%;
+  }
+  .best-product .best-product {
+    height: 100vh;
+    background-image: none;
+    background-color: #fcd32a;
+  }
+  .best-product .best-product__title {
+    position: static;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    padding: 15% 10%;
+  }
+  .best-product .best-product__title h2 {
+    margin: 0;
+  }
+  .best-product .best-product__tools {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    color: #000;
+    background-color: #fff;
+    border: solid 3px #020001;
+    font-size: 2rem;
+    font-weight: 800;
+    width: 70%;
+  }
+  .best-product .best-product__tools .content {
+    margin: .2rem .2rem .2rem 1rem;
+  }
+  .best-product .best-product__tools .btn-go {
+    margin: 5%;
+    text-align: right;
+  }
 }
 /*# sourceMappingURL=BestProduct.css.map */

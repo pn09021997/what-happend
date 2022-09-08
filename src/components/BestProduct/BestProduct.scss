@@ -5,7 +5,7 @@ $bright-orange: #f96400;
 
 .best-product {
     position: relative;
-    height: 105vh;
+    height: 120vh;
     font-family: $secondary_font_family;
     text-align: center;
 
@@ -15,31 +15,167 @@ $bright-orange: #f96400;
     background-size: 100% 100%;
     color: $bright-orange;
 
-    &__list {
+    .carousel-indicators {
+        display: none;
+    }
+
+    &__title {
+        h2 {
+            font-size: 3.4rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.75;
+        }
+
         position: absolute;
-        top: 63%;
-        transform: translate(0, -50%);
-        padding: 0 9.6rem;
+        top: 5rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    &__list {
+        .best-product-list--pc-ver {
+            position: absolute;
+            top: 55.5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0;
+            display: block;
+            width: 80%;
+        }
+
+        .best-product-list--mb-ver {
+            display: none;
+
+            .product-item--cf-p {
+                padding: 10%;
+            }
+        }
 
         .product-item {
             padding: 0;
+            position: relative;
 
             img {
                 width: 100%;
-                height: 50vh;
+            }
+
+            &__number-track {
+                background-image: url("../../assets/header/producticon-bg.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                position: absolute;
+                left: 0;
+                top: -10%;
+
+                color: $black;
+                font-size: 1.3rem;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.75;
+                text-decoration: underline;
+            }
+
+            &__tools {
+                position: absolute;
+                bottom: -10%;
+                left: 50%;
+                transform: translate(-50%, 0);
+
+                display: flex;
+                text-align: left;
+                color: $black;
+                background-color: $white;
+                border: solid 3px $dark-maroon;
+                font-size: 2rem;
+                font-weight: 800;
+                width: 70%;
+
+                .content {
+                    margin: .2rem .2rem .2rem 1rem;
+                }
+
+                .btn-go {
+                    width: 4rem;
+                    height: 4rem;
+                    cursor: pointer;
+                    margin: .2rem;
+                }
             }
         }
     }
 
+    @include Responsive(MD) {
+        $best-product-bg: #fcd32a;
+        .best-product-list--pc-ver {
+            display: none;
+        }
 
-    .row.no-gutter {
-        margin-left: 0;
-        margin-right: 0;
-    }
+        .best-product-list--mb-ver {
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 100%;
+        }
 
-    .row.no-gutter [class*='col-']:not(:first-child),
-    .row.no-gutter [class*='col-']:not(:last-child) {
-        padding-right: 0;
-        padding-left: 0;
+        .best-product {
+            height: 100vh;
+            background-image: none;
+            background-color: $best-product-bg;
+
+            &__title {
+                position: static;
+                transform: translate(0, 0);
+                padding: 15% 10%;
+
+                h2 {
+                    margin: 0;
+                }
+            }
+
+            &__tools {
+                position: absolute;
+                bottom: -10%;
+                left: 50%;
+                transform: translate(-50%, 0);
+
+                display: flex;
+                text-align: left;
+                color: $black;
+                background-color: $white;
+                border: solid 3px $dark-maroon;
+                font-size: 2rem;
+                font-weight: 800;
+                width: 70%;
+
+                .content {
+                    margin: .2rem .2rem .2rem 1rem;
+                }
+
+                .btn-go {
+                    margin: 5%;
+                    text-align: right;
+                }
+            }
+        }
     }
 }

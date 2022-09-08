@@ -1,9 +1,47 @@
+@import "../../App.scss";
+
 .product-list {
-    .col-gap {
-        column-gap: 2rem;
-    }
+    margin: 8%;
+    font-family: $secondary_font_family;
+
     &--col-cf {
-        width: 20%;
-        
+        width: 20% !important;
+    }
+
+    &__item {
+        &-card {
+            border: none !important;
+
+            &-body {
+                padding: 0 !important;
+                margin: 0;
+            }
+
+            &-content {
+                .item-name {
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.94;
+                    margin-top: 7%;
+                }
+                .item-info {
+                    position: relative;
+                    display: flex;
+                }
+
+                .like-icon {
+                    display: -webkit-box;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    @include Responsive(MD) {
+        .product-list--col-cf {
+            width: 100% !important;
+        }
     }
 }
