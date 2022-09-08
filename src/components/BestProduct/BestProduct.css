@@ -1,8 +1,40 @@
 .best-product {
-  height: 1073px;
+  position: relative;
+  height: 105vh;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  background-color: #fcd426;
+  background-image: url("../../assets/header/bes-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: #f96400;
+}
+
+.best-product__list {
+  position: absolute;
+  top: 63%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 0 9.6rem;
+}
+
+.best-product__list .product-item {
+  padding: 0;
+}
+
+.best-product__list .product-item img {
+  width: 100%;
+  height: 50vh;
+}
+
+.best-product .row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.best-product .row.no-gutter [class*='col-']:not(:first-child),
+.best-product .row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
 }
 /*# sourceMappingURL=BestProduct.css.map */

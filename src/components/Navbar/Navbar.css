@@ -1,11 +1,25 @@
 .navbar-custom {
   font-family: "Montserrat", sans-serif;
   padding: 1.7rem 6.9rem !important;
+  height: auto;
+}
+
+.navbar-custom .rectangle--cf {
+  color: #ccc8c6;
 }
 
 .navbar-custom .nav-link--cf {
   margin: 0 2rem;
   padding: 0;
   color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar-custom .rectangle--cf {
+    display: none;
+  }
+  .navbar-custom .nav-link--cf {
+    margin: 10px 0 0 0;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

@@ -1,24 +1,55 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 //Css
 import "./Navbar.css";
 
+//Assets
+import logo from "../../assets/header/logo.png";
+
 export default function NavbarCustom() {
   return (
     <>
-      <Navbar bg="dark" variant="dark" className="navbar-custom">
-        <Container fluid>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        variant="dark"
+        className="navbar-custom"
+      >
+        <Navbar.Brand href="#home">
+          <img
+            alt="logo"
+            src={logo}
+            className="d-inline-block align-top"
+          />{" "}
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="nav-link--cf" href="#home"> INTRODUCE </Nav.Link>
-            <Nav.Link className="nav-link--cf" href="#features"> SOLUTION </Nav.Link>
-            <Nav.Link className="nav-link--cf" href="#pricing"> RATE PLAN </Nav.Link>
-            <div style={{ color: "#ccc8c6" }}> | </div>
-            <Nav.Link className="nav-link--cf" href="#home"> LOGIN </Nav.Link>
-            <Nav.Link className="nav-link--cf" href="#features"> APPLY FOR FREE US </Nav.Link>
+            <Nav.Link className="nav-link--cf" href="#home">
+              {" "}
+              INTRODUCE{" "}
+            </Nav.Link>
+            <Nav.Link className="nav-link--cf" href="#features">
+              {" "}
+              SOLUTION{" "}
+            </Nav.Link>
+            <Nav.Link className="nav-link--cf" href="#pricing">
+              {" "}
+              RATE PLAN{" "}
+            </Nav.Link>
+            <div className="rectangle--cf"> | </div>
+            <Nav.Link className="nav-link--cf" href="#home">
+              {" "}
+              LOGIN{" "}
+            </Nav.Link>
+            <Nav.Link className="nav-link--cf" href="#features">
+              {" "}
+              APPLY FOR FREE US{" "}
+            </Nav.Link>
           </Nav>
-        </Container>
+        </Navbar.Collapse>
       </Navbar>
     </>
   );

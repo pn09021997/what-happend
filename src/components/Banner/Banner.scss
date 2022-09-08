@@ -1,7 +1,10 @@
 .banner {
-    height: 1000px;
+    height: 100vh;
     position: relative;
-    background-color: #eb470b;
+    background-image: url("../../assets/header/main-banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
 
     .demo {
         position: absolute;

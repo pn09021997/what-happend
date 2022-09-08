@@ -3,10 +3,26 @@
 .navbar-custom {
     font-family: $secondary_font_family;
     padding: 1.7rem 6.9rem !important;
+    height: auto;
+    
+    .rectangle--cf {
+        color: $pinkish-grey;
+
+    }
 
     .nav-link--cf {
         margin: 0 2rem; 
         padding: 0;
         color: $white;
+    }
+
+    @include Responsive(MD) {
+        .rectangle--cf {
+            display: none;
+        }
+
+        .nav-link--cf {
+            margin: 10px 0 0 0;
+        }
     }
 }

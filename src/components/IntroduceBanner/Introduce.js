@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 //Css
 import "./Introduce.css";
@@ -9,11 +9,10 @@ export default function Introduce() {
   return (
     <div className="introduce-banner">
       <div className="introduce-banner__content">
-        <Container>
           <Row>
-            <Col md={6}>
-              <h2> What Happened! </h2>
-              <p>
+            <Col lg={6}>
+              <h2 className="title"> What Happened! </h2>
+              <p className="content">
                 {" "}
                 How to create mobile-optimized videos in minutes. Not a
                 designer, every team makes a lot of videos Can be trimmed. Take
@@ -22,7 +21,6 @@ export default function Introduce() {
               </p>
             </Col>
           </Row>
-        </Container>
       </div>
     </div>
   );
