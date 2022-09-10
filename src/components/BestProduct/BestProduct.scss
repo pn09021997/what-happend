@@ -35,6 +35,8 @@ $bright-orange: #f96400;
             font-stretch: normal;
             font-style: normal;
             line-height: 1.75;
+
+            max-width: 665px;
         }
 
         position: absolute;
@@ -124,6 +126,12 @@ $bright-orange: #f96400;
     }
 
     @include Responsive(MD) {
+        & {
+            text-align: left;
+            background-image: none;
+            background-color: #fcd32a;
+        }
+
         $best-product-bg: #fcd32a;
         .best-product-list--pc-ver {
             display: none;
@@ -145,11 +153,7 @@ $bright-orange: #f96400;
             &__title {
                 position: static;
                 transform: translate(0, 0);
-                padding: 15% 10%;
-
-                h2 {
-                    margin: 0;
-                }
+                padding: 15% 5%;
             }
 
             &__tools {

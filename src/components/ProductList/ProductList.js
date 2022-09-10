@@ -1,5 +1,5 @@
 import React from "react";
-
+import { v4 } from "uuid";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
 //Css
@@ -11,15 +11,25 @@ import ButtonCustom from "../sub-components/Button/ButtonCustom";
 const listProduct = [];
 for (let i = 1; i <= 25; i++) {
   if (i < 10) {
-    listProduct.push({ img: require(`../../assets/products/img-0${i}.png`) });
+    listProduct.push({
+      id: v4(),
+      img: require(`../../assets/products/img-0${i}.png`),
+    });
   } else {
-    listProduct.push({ img: require(`../../assets/products/img-${i}.png`) });
+    listProduct.push({
+      id: v4(),
+      img: require(`../../assets/products/img-${i}.png`),
+    });
   }
 }
 
 const renderProductList = listProduct.map((img) => {
   return (
-    <Col md={2} className="product-list--col-cf product-list__item">
+    <Col
+      md={2}
+      key={img.id}
+      className="product-list--col-cf product-list__item"
+    >
       <Card className="product-list__item-card">
         <div className="product-list__item-img">
           <Card.Img
@@ -55,7 +65,9 @@ export default function ProductList() {
     <div className="product-list">
       <Container>
         <Row>{renderProductList}</Row>
-        <ButtonCustom />
+        <div className="product-list__load-more">
+          <ButtonCustom> SEE MORE </ButtonCustom>
+        </div>
       </Container>
     </div>
   );

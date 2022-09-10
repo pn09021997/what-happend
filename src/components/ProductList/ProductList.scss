@@ -39,6 +39,14 @@
         }
     }
 
+    &__load-more {
+        position: relative;
+        margin: 7% 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     @include Responsive(MD) {
         .product-list--col-cf {
             width: 100% !important;

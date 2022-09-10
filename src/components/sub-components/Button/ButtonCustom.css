@@ -1,1 +1,13 @@
-/* No CSS *//*# sourceMappingURL=ButtonCustom.css.map */
+.button-custom {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  background-color: transparent;
+  outline: none;
+  border: 3px solid #020001;
+  padding: .3% 2%;
+}
+/*# sourceMappingURL=ButtonCustom.css.map */

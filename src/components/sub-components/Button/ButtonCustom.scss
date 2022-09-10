@@ -1,0 +1,16 @@
+@import "../../../App.scss";
+
+.button-custom {
+    font-family: $secondary_font_family;
+    font-size: 1rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+
+    background-color: transparent;
+    outline: none;
+    border: 3px solid $dark-maroon;
+
+    padding: .3% 2%;    
+}

@@ -37,6 +37,7 @@
   font-stretch: normal;
   font-style: normal;
   line-height: 1.75;
+  max-width: 665px;
 }
 
 .best-product__list .best-product-list--pc-ver {
@@ -125,6 +126,11 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .best-product {
+    text-align: left;
+    background-image: none;
+    background-color: #fcd32a;
+  }
   .best-product .best-product-list--pc-ver {
     display: none;
   }
@@ -145,10 +151,7 @@
     position: static;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
-    padding: 15% 10%;
-  }
-  .best-product .best-product__title h2 {
-    margin: 0;
+    padding: 15% 5%;
   }
   .best-product .best-product__tools {
     position: absolute;

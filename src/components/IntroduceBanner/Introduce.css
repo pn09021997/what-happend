@@ -32,6 +32,15 @@
   font-stretch: normal;
   font-style: normal;
   line-height: 1.75;
-  padding-right: 4rem;
+  max-width: 667px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .introduce-banner__content {
+    height: 70vh;
+    left: 5%;
+    -webkit-transform: translate(0, calc(-50% + 3rem));
+            transform: translate(0, calc(-50% + 3rem));
+  }
 }
 /*# sourceMappingURL=Introduce.css.map */

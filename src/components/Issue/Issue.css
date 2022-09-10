@@ -1,0 +1,175 @@
+.issue {
+  height: 100%;
+  background-color: #fccb05;
+  text-align: center;
+  color: #110e03;
+  position: relative;
+  padding: 10% 0;
+}
+
+.issue--col-cf {
+  width: 20% !important;
+  padding: 0 !important;
+}
+
+.issue--row-full-w {
+  width: 100%;
+}
+
+.issue .issue__sub-img-6 {
+  top: 5%;
+  right: 5%;
+}
+
+.issue .issue__sub-img-2 {
+  top: 15%;
+  right: 5%;
+}
+
+.issue__title {
+  margin-bottom: 5%;
+}
+
+.issue__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.issue__title-content {
+  font-family: "NotoSans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  max-width: 682px;
+  margin: 2rem auto;
+}
+
+.issue__title button {
+  margin: 1.8rem 0;
+}
+
+.issue__content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.issue__content-sub-img--cf-position {
+  position: absolute;
+}
+
+.issue__content .issue__sub-img-3 {
+  left: 11%;
+  bottom: -25%;
+  max-width: 167px;
+  max-height: 169px;
+}
+
+.issue__content .issue__sub-img-4 {
+  left: 21%;
+  top: -27px;
+  max-width: 111px;
+  max-height: 59px;
+}
+
+.issue__content .issue__sub-img-5 {
+  left: 74%;
+  bottom: -12%;
+}
+
+.issue__content-box {
+  max-height: 480px;
+  max-width: 357px;
+  height: 100vh;
+  position: relative;
+}
+
+.issue__content-brand-title {
+  max-height: 75px;
+  height: 100vh;
+  background-color: #111111;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.issue__content-brand-title--special-bg {
+  background-color: #ff5500;
+}
+
+.issue__content-brand-title p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  margin: 0;
+}
+
+.issue__content-brand-img {
+  max-height: 405px;
+  height: 100vh !important;
+}
+
+.issue__content-main {
+  background-color: #ff5500;
+}
+
+.issue__content-main-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  max-width: 189px;
+  margin: 0 auto 20%;
+}
+
+.issue__content-main .content--centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1024px) {
+  .issue__title {
+    padding: 0 5%;
+  }
+  .issue__content-box {
+    height: 30vh;
+    width: 30vh;
+  }
+  .issue__content-sub-img--cf-position {
+    display: none;
+  }
+  .issue .issue--col-cf {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=Issue.css.map */

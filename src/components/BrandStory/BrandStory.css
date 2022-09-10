@@ -1,0 +1,119 @@
+.brand-story {
+  height: 100%;
+  background-color: #0565bb;
+  text-align: center;
+  color: #fcd32a;
+  padding: 10% 0;
+}
+
+.brand-story__title {
+  margin-bottom: 5%;
+}
+
+.brand-story__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.brand-story__title-content {
+  font-family: "NotoSans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.brand-story__content {
+  color: #222222;
+}
+
+.brand-story__content .brand-story__content-main {
+  text-align: left;
+  background-image: url("../../assets/body/story-banner/window.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  max-width: 1251px;
+  max-height: 418px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.brand-story__content .brand-story__content-main .content {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  padding: 2% 5% 0 2%;
+}
+
+.brand-story__content .brand-story__content-main .content h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.4;
+  letter-spacing: normal;
+}
+
+.brand-story__content .brand-story__content-main .content p {
+  font-family: "NotoSans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  margin: 0 0 2.5rem;
+}
+
+.brand-story__content .brand-story__content-main .content button {
+  padding: .3% 6% !important;
+}
+
+.brand-story__content .brand-story__content-main--pc-ver {
+  display: block;
+}
+
+.brand-story__content .brand-story__content-main--mb-ver {
+  display: none;
+}
+
+.brand-story__content .brand-story__content-main--mb-ver h5 {
+  font-size: .5rem !important;
+  margin: 0;
+}
+
+.brand-story__content .brand-story__content-main--mb-ver .btn--show-modal {
+  margin: 0 !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .brand-story {
+    padding: 10% 5%;
+  }
+  .brand-story .brand-story__content-main {
+    height: 20vh;
+  }
+  .brand-story .brand-story__content-main--pc-ver {
+    display: none;
+  }
+  .brand-story .brand-story__content-main--mb-ver {
+    display: block;
+  }
+}
+
+.brand-story__content-main-modal-body {
+  background-color: #0565bb !important;
+  color: #fcd32a;
+}
+/*# sourceMappingURL=BrandStory.css.map */

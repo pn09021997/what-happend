@@ -1,0 +1,178 @@
+@import "../../App.scss";
+
+.issue {
+    height: 100%;
+    background-color: $goldenrod;
+    text-align: center;
+    color: $dark-brown;
+    position: relative;
+
+    padding: 10% 0;
+
+    &--col-cf {
+        width: 20% !important;
+        padding: 0 !important;
+    }
+
+    &--row-full-w {
+        width: 100%;
+    }
+
+    
+    .issue__sub-img-6 {
+        top: 5%;
+        right: 5%;
+    }
+
+    .issue__sub-img-2 {
+        top: 15%;
+        right: 5%;
+    }
+
+    &__title {
+        margin-bottom: 5%;
+
+        h2 {
+            font-family: $secondary_font_family;
+            font-size: 3.2rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+        }
+
+        &-content {
+            font-family: $primary_font_family;
+            font-size: 1.2rem;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.88;
+            letter-spacing: normal;
+
+            max-width: 682px;
+            margin: 2rem auto;
+        }
+
+        button {
+            margin: 1.8rem 0;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        
+        &-sub-img--cf-position {
+            position: absolute;
+        }
+
+        .issue__sub-img {
+            &-3 {
+                left: 11%;
+                bottom: -25%;
+                max-width: 167px;
+                max-height: 169px;
+            }
+
+            &-4 {
+                left: 21%;
+                top: -27px;
+                max-width: 111px;
+                max-height: 59px;
+            }
+
+            &-5 {
+                left: 74%;
+                bottom: -12%;
+            }
+        }
+
+        &-box {
+            max-height: 480px;
+            max-width: 357px;
+            height: 100vh;
+            position: relative;
+        }
+
+        &-brand-title {
+            max-height: 75px;
+            height: 100vh;
+            background-color: $black-two;
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--special-bg {
+                background-color: $bright-orange-two;
+            }   
+
+            p {
+                font-family: $secondary_font_family;
+                font-size: 2.2rem;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.67;
+                margin: 0;
+            }
+        }
+
+        &-brand-img {
+            max-height: 405px;
+            height: 100vh !important;
+        }
+
+        &-main {
+            background-color: $bright-orange-two;
+
+
+            &-title {
+                font-family: $secondary_font_family;
+                font-size: 4rem;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.2;
+
+                max-width: 189px;
+                margin: 0 auto 20%;
+            }
+
+            .content--centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    @include Responsive(MD) {
+        & {
+            &__title {
+                padding: 0 5%;
+            }
+
+            &__content {
+                &-box {
+                    height: 30vh;
+                    width: 30vh;
+                }
+
+                &-sub-img--cf-position {
+                    display: none;
+                }
+            }
+        }
+
+        .issue--col-cf {
+            width: 100% !important;
+        }
+    }
+}

@@ -32,7 +32,16 @@
             font-stretch: normal;
             font-style: normal;
             line-height: 1.75;
-            padding-right: 4rem;
+            
+            max-width: 667px;
+        }
+    }
+
+    @include Responsive(MD) {
+        &__content {
+            height: 70vh;
+            left: 5%;
+            transform: translate(0, calc(-50% + 3rem));
         }
     }
 }

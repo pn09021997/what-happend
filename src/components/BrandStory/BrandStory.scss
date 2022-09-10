@@ -1,0 +1,130 @@
+@import "../../App.scss";
+
+.brand-story {
+    height: 100%;
+    background-color: $cerulean;
+    text-align: center;
+    color: $sun-yellow;
+
+    padding: 10% 0;
+
+    &__title {
+        margin-bottom: 5%;
+
+        h2 {
+            font-family: $secondary_font_family;
+            font-size: 3.2rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+
+        &-content {
+            font-family: $primary_font_family;
+            font-size: 1.2rem;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.88;
+            
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    }
+
+    &__content {
+        color: $black-three;
+
+        .brand-story__content-main {
+            text-align: left;
+
+
+            background-image: url("../../assets/body/story-banner/window.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100vh;
+
+            max-width: 1251px;
+            max-height: 418px;
+            position: relative;
+            margin: 0 auto;
+
+            .content {
+                position: absolute;
+                left: 50%;
+                top: 10%;
+                padding: 2% 5% 0 2%;
+
+                h5 {
+                    font-family: $secondary_font_family;
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 2.4;
+                    letter-spacing: normal;
+                }
+
+                p {
+                    font-family: $primary_font_family;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.88;
+                    letter-spacing: normal;
+                    margin: 0 0 2.5rem;
+                }
+
+                button {
+                    padding: .3% 6% !important;
+                }
+            }
+
+            &--pc-ver {
+                display: block;
+            }
+
+            &--mb-ver {
+                display: none;
+
+                h5 {
+                    font-size: .5rem !important;
+                    margin: 0;
+                }
+
+                .btn--show-modal {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+
+    @include Responsive(MD) {
+        & {
+            padding: 10% 5%;
+        }
+
+        .brand-story__content-main {
+            height: 20vh;
+        }
+
+        .brand-story__content-main--pc-ver {
+            display: none;
+        }
+
+        .brand-story__content-main--mb-ver {
+            display: block
+        }
+    }
+}
+
+.brand-story__content-main-modal {
+    &-body{
+        background-color: $cerulean !important;
+        color: $sun-yellow;
+    }
+}

@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function ButtonCustom() {
+import "./ButtonCustom.css"
+
+export default function ButtonCustom({ children }) {
   return (
-    <button> SEE MORE </button>
-  )
+    <button className="button-custom"> { children } </button>
+  );
 }
