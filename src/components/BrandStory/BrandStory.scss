@@ -155,7 +155,7 @@
         }
 
         .brand-story__content-main {
-            height: 20vh;
+            height: 25vh;
         }
 
         .brand-story__content-main--pc-ver {
@@ -172,5 +172,54 @@
     &-body {
         background-color: $cerulean  !important;
         color: $sun-yellow;
+    }
+}
+
+.brand-story-btn-show--img {
+    position: relative;
+    width: fit-content;
+    /* To adjust the height as well */
+    height: fit-content;
+    margin: 10% auto;
+}
+
+.brand-story-btn-show--link {
+    font-family: $secondary_font_family  !important;
+    font-size: 1.5rem !important;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    z-index: 1;
+
+    background-image: linear-gradient(to right,
+            #54b3d6,
+            #54b3d6 50%,
+            #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:before {
+        content: '';
+        background: #54b3d6;
+        display: block;
+        position: absolute;
+        bottom: -2%;
+        left: 0;
+        width: 0;
+        height: 2%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        background-position: 0;
+    }
+
+    &:hover::before {
+        width: 100%;
     }
 }

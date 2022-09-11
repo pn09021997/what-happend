@@ -64,10 +64,12 @@ export default function BrandStory() {
             <div className="brand-story__content-main--mb-ver">
               <h5> WHAT HAPPENED'S BRAND STORY </h5>
               <div className="btn-show-modal--centered">
-                <p onClick={handleShow} className="btn--show-modal">
-                  {" "}
-                  →{" "}
-                </p>
+              <div className="brand-story-btn-show">
+            <div className="brand-story-btn-show--img">
+                <img src="http://paul-themes.com/html/moonex/assets/img/root/call-to-action.png" alt="" className="img-fluid"/>
+                <p className="gradient-text brand-story-btn-show--link" onClick={handleShow}>Call <br/> Me</p>
+            </div>
+        </div>
               </div>
               <Modal
                 show={show}

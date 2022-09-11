@@ -18,7 +18,7 @@
         width: 100%;
     }
 
-    
+
     .issue__sub-img-6 {
         top: 5%;
         right: 5%;
@@ -59,6 +59,14 @@
         }
     }
 
+    &-brand--pc-ver {
+        display: block;
+    }
+
+    &-brand--mb-ver {
+        display: none;
+    }
+
     &__content {
         text-align: center;
         display: flex;
@@ -66,7 +74,7 @@
         align-items: center;
         position: relative;
 
-        
+
         &-sub-img--cf-position {
             position: absolute;
         }
@@ -110,7 +118,7 @@
 
             &--special-bg {
                 background-color: $bright-orange-two;
-            }   
+            }
 
             p {
                 font-family: $secondary_font_family;
@@ -161,18 +169,30 @@
 
             &__content {
                 &-box {
-                    height: 30vh;
-                    width: 30vh;
+                    width: 50vh;
+                    margin: 0 auto;
                 }
 
                 &-sub-img--cf-position {
                     display: none;
                 }
             }
+
+            &-brand--pc-ver {
+                display: none;
+            }
+
+            &-brand--mb-ver {
+                display: block;
+            }
         }
 
         .issue--col-cf {
             width: 100% !important;
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            display: none;
         }
     }
 }

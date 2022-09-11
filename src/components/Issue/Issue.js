@@ -1,6 +1,6 @@
 import React from "react";
 import { v4 } from "uuid";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Carousel } from "react-bootstrap";
 import ButtonCustom from "../sub-components/Button/ButtonCustom";
 
 //Css
@@ -72,6 +72,25 @@ const renderBrands = listBrand.map((brand) => {
   );
 });
 
+const renderBrand_MBVer = listBrand.map((brand) => {
+  return (
+    <Carousel.Item className="">
+      <div className="issue__content-box">
+        <div className="content--centered">
+          <div className="issue__content-brand-title">
+            <p> {brand.brandName} </p>
+          </div>
+          <img
+            src={brand.img}
+            alt="issue-img"
+            className="img-fluid issue__content-brand-img"
+          />
+        </div>
+      </div>
+    </Carousel.Item>
+  );
+});
+
 const renderSubImg = listSubImg.map((img) => {
   return (
     <img
@@ -95,25 +114,44 @@ export default function Issue() {
         </p>
         <ButtonCustom> SEE MORE </ButtonCustom>
       </div>
-      <div className="issue__content">
-        <Row className="issue--row-full-w">
-          <Col md={2} className="issue--col-cf">
+      <div className="issue-brand--pc-ver">
+        <div className="issue__content">
+          <Row className="issue--row-full-w">
+            <Col md={2} className="issue--col-cf">
+              <div className="issue__content-box issue__content-main">
+                <div className="content--centered">
+                  <p className="issue__content-main-title"> WHPN ISSUE </p>
+                  <img
+                    src={issueMainImg}
+                    alt="issue-img"
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
+            </Col>
+            {renderBrands}
+          </Row>
+          {renderSubImg}
+        </div>
+      </div>
+      <div className="issue-brand--mb-ver">
+        <Carousel>
+          <Carousel.Item className="">
             <div className="issue__content-box issue__content-main">
               <div className="content--centered">
                 <p className="issue__content-main-title"> WHPN ISSUE </p>
                 <img src={issueMainImg} alt="issue-img" className="img-fluid" />
               </div>
             </div>
-          </Col>
-          {renderBrands}
-        </Row>
-        {renderSubImg}
+          </Carousel.Item>
+          { renderBrand_MBVer }
+        </Carousel>
       </div>
       <img
         key={v4()}
         src={issueSubImg6}
         alt="issue-sub-img"
-        className="issue__content-sub-img--cf-position issue__sub-img-6 img-fluid" 
+        className="issue__content-sub-img--cf-position issue__sub-img-6 img-fluid"
       />
       <img
         key={v4()}

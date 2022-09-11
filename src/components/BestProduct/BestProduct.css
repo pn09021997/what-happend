@@ -1,3 +1,8 @@
+hr {
+  margin: 1rem 6.9rem !important;
+  background-color: #f4f4f4;
+}
+
 .best-product {
   position: relative;
   height: 130vh;
@@ -130,11 +135,9 @@
 
 @media only screen and (max-width: 1024px) {
   .best-product {
-    text-align: left;
+    text-align: center;
     background-image: none;
-    background-color: #fcd32a;
-    height: 120vh;
-    background-image: none;
+    height: 100%;
     background-color: #fcd32a;
   }
   .best-product__list .product-item img {
@@ -142,13 +145,13 @@
     max-height: 514px;
     width: 50vh;
   }
-  .best-product__title {
-    position: static;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-    padding: 15% 5%;
+  .best-product__list .product-item__number-track {
+    max-width: calc(50% - 92px);
+    max-height: calc(50% - 92px);
+    font-size: 1.5rem;
+    top: 0;
   }
-  .best-product__tools {
+  .best-product__list .product-item__tools {
     position: absolute;
     bottom: -10%;
     left: 50%;
@@ -165,12 +168,21 @@
     font-weight: 800;
     width: 70%;
   }
-  .best-product__tools .content {
+  .best-product__list .product-item__tools .content {
     margin: .2rem .2rem .2rem 1rem;
+    font-size: 1rem;
   }
-  .best-product__tools .btn-go {
+  .best-product__list .product-item__tools .btn-go {
     margin: 5%;
     text-align: right;
+    max-width: calc(50% - 66px);
+    max-height: calc(50% - 65px);
+  }
+  .best-product__title {
+    position: static;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    padding: 15% 5%;
   }
   .best-product .best-product-list--pc-ver {
     display: none;
@@ -178,7 +190,15 @@
   .best-product .best-product-list--mb-ver {
     display: block;
     width: 100%;
-    padding: 0 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .best-product .best-product-list--mb-ver .product-item--cf-p {
     padding: 10px;

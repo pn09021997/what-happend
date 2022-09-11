@@ -29,7 +29,7 @@ export default function BestProduct() {
 
 function BestProductList() {
   return (
-    <div>
+    <div className="best-product">
       <div className="best-product-list--pc-ver">
         <Row>
           <Col lg={4} className="px-0">

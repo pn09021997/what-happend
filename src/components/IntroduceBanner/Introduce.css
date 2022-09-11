@@ -1,3 +1,8 @@
+hr {
+  margin: 1rem 6.9rem !important;
+  background-color: #f4f4f4;
+}
+
 .introduce-banner {
   font-family: "Montserrat", sans-serif;
   background-image: url("../../assets/header/introduction-bg.png");
@@ -35,7 +40,10 @@
   max-width: 667px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
+  .introduce-banner {
+    text-align: center;
+  }
   .introduce-banner__content {
     height: 70vh;
     left: 5%;

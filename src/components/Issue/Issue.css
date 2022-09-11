@@ -1,3 +1,8 @@
+hr {
+  margin: 1rem 6.9rem !important;
+  background-color: #f4f4f4;
+}
+
 .issue {
   height: 100%;
   background-color: #fccb05;
@@ -53,6 +58,14 @@
 
 .issue__title button {
   margin: 1.8rem 0;
+}
+
+.issue-brand--pc-ver {
+  display: block;
+}
+
+.issue-brand--mb-ver {
+  display: none;
 }
 
 .issue__content {
@@ -162,14 +175,23 @@
     padding: 0 5%;
   }
   .issue__content-box {
-    height: 30vh;
-    width: 30vh;
+    width: 50vh;
+    margin: 0 auto;
   }
   .issue__content-sub-img--cf-position {
     display: none;
   }
+  .issue-brand--pc-ver {
+    display: none;
+  }
+  .issue-brand--mb-ver {
+    display: block;
+  }
   .issue .issue--col-cf {
     width: 100% !important;
+  }
+  .issue .carousel-control-prev, .issue .carousel-control-next {
+    display: none;
   }
 }
 /*# sourceMappingURL=Issue.css.map */

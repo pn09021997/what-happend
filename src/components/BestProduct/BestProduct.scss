@@ -1,7 +1,6 @@
 @import "../../App.scss";
 
 //Colors
-$bright-orange: #f96400;
 
 .best-product {
     position: relative;
@@ -105,7 +104,7 @@ $bright-orange: #f96400;
                 text-align: left;
                 color: $black;
                 background-color: $white;
-                border: solid 3px $dark-maroon; 
+                border: solid 3px $dark-maroon;
                 max-width: 369px;
                 max-height: 79px;
                 width: 100vh;
@@ -130,12 +129,11 @@ $bright-orange: #f96400;
 
     @include Responsive(MD) {
         $best-product-bg: #fcd32a;
+
         & {
-            text-align: left;
+            text-align: center;
             background-image: none;
-            background-color: #fcd32a;
-            height: 120vh;
-            background-image: none;
+            height: 100%;
             background-color: $best-product-bg;
 
             &__list {
@@ -144,6 +142,41 @@ $bright-orange: #f96400;
                         max-width: 523px;
                         max-height: 514px;
                         width: 50vh;
+                    }
+
+                    &__number-track {
+                        max-width: calc(50% - 92px);
+                        max-height: calc(50% - 92px);
+                        font-size: 1.5rem;
+                        top: 0;
+                    }
+
+                    &__tools {
+                        position: absolute;
+                        bottom: -10%;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+
+                        display: flex;
+                        text-align: left;
+                        color: $black;
+                        background-color: $white;
+                        border: solid 3px $dark-maroon;
+                        font-size: 2rem;
+                        font-weight: 800;
+                        width: 70%;
+
+                        .content {
+                            margin: .2rem .2rem .2rem 1rem;
+                            font-size: 1rem;
+                        }
+
+                        .btn-go {
+                            margin: 5%;
+                            text-align: right;
+                            max-width: calc(50% - 66px);
+                            max-height: calc(50% - 65px);
+                        }
                     }
                 }
             }
@@ -154,34 +187,9 @@ $bright-orange: #f96400;
                 transform: translate(0, 0);
                 padding: 15% 5%;
             }
-
-            &__tools {
-                position: absolute;
-                bottom: -10%;
-                left: 50%;
-                transform: translate(-50%, 0);
-
-                display: flex;
-                text-align: left;
-                color: $black;
-                background-color: $white;
-                border: solid 3px $dark-maroon;
-                font-size: 2rem;
-                font-weight: 800;
-                width: 70%;
-
-                .content {
-                    margin: .2rem .2rem .2rem 1rem;
-                }
-
-                .btn-go {
-                    margin: 5%;
-                    text-align: right;
-                }
-            }
         }
 
-        
+
         .best-product-list--pc-ver {
             display: none;
         }
@@ -189,7 +197,9 @@ $bright-orange: #f96400;
         .best-product-list--mb-ver {
             display: block;
             width: 100%;
-            padding: 0 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             .product-item--cf-p {
                 padding: 10px;

@@ -37,7 +37,10 @@
         }
     }
 
-    @include Responsive(MD) {
+    @include Responsive(SM) {
+        & {
+            text-align: center;
+        }
         &__content {
             height: 70vh;
             left: 5%;

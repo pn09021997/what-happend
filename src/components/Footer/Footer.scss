@@ -22,10 +22,20 @@
         padding: 0;
         display: flex;
         float: right;
+
        }
 
        &-item {
         cursor: pointer;
+        margin: 0 10px;
+
+        &:first-child {
+            margin-left: 0
+        }
+
+        &:last-child {
+            margin-right: 0
+        }
 
         img {
             max-width: 23px;
@@ -92,6 +102,26 @@
     @include Responsive(MD) {
         & {
             padding: 1.7rem !important;
+
+            &__social {
+                margin-top: 30%;
+                &-content {
+                    float: left;
+                }
+            }
+
+            &__content {
+                &-item {
+                    margin-top: 5%;
+                    &--float-right {
+                        float: left;
+                    }
+                }
+            }
+
+            &__about {
+                margin-top: 20%;
+            }
         }
     }
 }

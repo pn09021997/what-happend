@@ -44,53 +44,55 @@ export default function FooterCustom() {
             </ul>
           </Col>
           <Col md={6}>
-            <Row>
-              <Col md={3}>
-                <div className="footer__content-item--float-right">
-                  <p className="footer__title">about us</p>
-                  <ul className="footer__content">
-                    <li className="footer__content-item item2" key={v4()}>
-                      회사 소개 인재 채용 상시 할인 혜택
-                    </li>
-                  </ul>
-                </div>
-              </Col>
-              <Col md={3}>
-                {" "}
-                <div className="footer__content-item--float-right">
-                  <p className="footer__title">my order</p>
-                  <ul className="footer__content">
-                    <li className="footer__content-item item3" key={v4()}>
-                      내 주문 주문 배송 취소 / 교환 / 반품 내역 상품 리뷰 내역
-                      증빙 서류 발급
-                    </li>
-                  </ul>
-                </div>
-              </Col>
-              <Col md={3}>
-                {" "}
-                <div className="footer__content-item--float-right" >
-                  <p className="footer__title">my account</p>
-                  <ul className="footer__content">
-                    <li className="footer__content-item item4" key={v4()}>
-                      회원 정보 수정 회원 등급 마일리지 현황 쿠폰
-                    </li>
-                  </ul>
-                </div>
-              </Col>
-              <Col md={3}>
-                {" "}
-                <div className="footer__content-item--float-right">
-                  <p className="footer__title">help</p>
-                  <ul className="footer__content">
-                    <li className="footer__content-item item5" key={v4()}>
-                      1 : 1 상담 내역 상품 Q & A 내역 공지 사항 자주하는 질문
-                      고객의 소리
-                    </li>
-                  </ul>
-                </div>
-              </Col>
-            </Row>
+            <div className="footer__about">
+              <Row>
+                <Col md={3}>
+                  <div className="footer__content-item--float-right">
+                    <p className="footer__title">about us</p>
+                    <ul className="footer__content">
+                      <li className="footer__content-item item2" key={v4()}>
+                        회사 소개 인재 채용 상시 할인 혜택
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+                <Col md={3}>
+                  {" "}
+                  <div className="footer__content-item--float-right">
+                    <p className="footer__title">my order</p>
+                    <ul className="footer__content">
+                      <li className="footer__content-item item3" key={v4()}>
+                        내 주문 주문 배송 취소 / 교환 / 반품 내역 상품 리뷰 내역
+                        증빙 서류 발급
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+                <Col md={3}>
+                  {" "}
+                  <div className="footer__content-item--float-right">
+                    <p className="footer__title">my account</p>
+                    <ul className="footer__content">
+                      <li className="footer__content-item item4" key={v4()}>
+                        회원 정보 수정 회원 등급 마일리지 현황 쿠폰
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+                <Col md={3}>
+                  {" "}
+                  <div className="footer__content-item--float-right">
+                    <p className="footer__title">help</p>
+                    <ul className="footer__content">
+                      <li className="footer__content-item item5" key={v4()}>
+                        1 : 1 상담 내역 상품 Q & A 내역 공지 사항 자주하는 질문
+                        고객의 소리
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+              </Row>
+            </div>
           </Col>
         </Row>
       </div>

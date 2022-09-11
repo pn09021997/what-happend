@@ -33,6 +33,15 @@ hr {
 
 .footer__social-item {
   cursor: pointer;
+  margin: 0 10px;
+}
+
+.footer__social-item:first-child {
+  margin-left: 0;
+}
+
+.footer__social-item:last-child {
+  margin-right: 0;
 }
 
 .footer__social-item img {
@@ -97,6 +106,21 @@ hr {
 @media only screen and (max-width: 1024px) {
   .footer {
     padding: 1.7rem !important;
+  }
+  .footer__social {
+    margin-top: 30%;
+  }
+  .footer__social-content {
+    float: left;
+  }
+  .footer__content-item {
+    margin-top: 5%;
+  }
+  .footer__content-item--float-right {
+    float: left;
+  }
+  .footer__about {
+    margin-top: 20%;
   }
 }
 /*# sourceMappingURL=Footer.css.map */
