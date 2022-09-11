@@ -186,11 +186,6 @@
 .brand-story-btn-show--link {
     font-family: $secondary_font_family  !important;
     font-size: 1.5rem !important;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-75%, -50%);
     z-index: 1;
 
     background-image: linear-gradient(to right,

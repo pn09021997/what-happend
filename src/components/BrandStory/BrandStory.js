@@ -66,8 +66,7 @@ export default function BrandStory() {
               <div className="btn-show-modal--centered">
               <div className="brand-story-btn-show">
             <div className="brand-story-btn-show--img">
-                <img src="http://paul-themes.com/html/moonex/assets/img/root/call-to-action.png" alt="" className="img-fluid"/>
-                <p className="gradient-text brand-story-btn-show--link" onClick={handleShow}>Click <br/> Me</p>
+                <p className="gradient-text brand-story-btn-show--link" onClick={handleShow}>View <br/> Story</p>
             </div>
         </div>
               </div>
