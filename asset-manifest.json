@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/what-happend/static/css/main.1f18c229.css",
+    "main.css": "/what-happend/static/css/main.4d5e4444.css",
     "main.js": "/what-happend/static/js/main.83e055e8.js",
     "static/js/787.302312d6.chunk.js": "/what-happend/static/js/787.302312d6.chunk.js",
     "static/media/NotoSans-Regular.ttf": "/what-happend/static/media/NotoSans-Regular.eae34fa8f1e0c4c6d797.ttf",
@@ -41,12 +41,12 @@
     "static/media/bes-bg.png": "/what-happend/static/media/bes-bg.08b8b84fc261d1f48948.png",
     "static/media/img-17.png": "/what-happend/static/media/img-17.5268ac2a242f9329fd11.png",
     "index.html": "/what-happend/index.html",
-    "main.1f18c229.css.map": "/what-happend/static/css/main.1f18c229.css.map",
+    "main.4d5e4444.css.map": "/what-happend/static/css/main.4d5e4444.css.map",
     "main.83e055e8.js.map": "/what-happend/static/js/main.83e055e8.js.map",
     "787.302312d6.chunk.js.map": "/what-happend/static/js/787.302312d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f18c229.css",
+    "static/css/main.4d5e4444.css",
     "static/js/main.83e055e8.js"
   ]
 }
