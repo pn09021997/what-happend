@@ -107,7 +107,7 @@ hr {
 
 .issue__content-box {
   max-height: 480px;
-  max-width: 357px;
+  max-width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -144,7 +144,8 @@ hr {
 
 .issue__content-brand-img {
   max-height: 405px;
-  height: 100vh !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .issue__content-main {
