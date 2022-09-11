@@ -9,6 +9,8 @@ import BestProduct from './components/BestProduct/BestProduct';
 import ProductList from './components/ProductList/ProductList';
 import BrandStory from './components/BrandStory/BrandStory';
 import Issue from './components/Issue/Issue';
+import Advertisement from './components/Advertisement/Advertisement';
+import Footer from './components/Footer/Footer';
 
 //Components
 
@@ -35,6 +37,14 @@ function App() {
 
       { /*Issue*/ }
       <Issue />
+
+      { /*Advertisement*/ }
+      <Advertisement />
+
+      <hr/>
+      
+      { /*Footer*/ }
+      <Footer />
     </div>
   );
 }

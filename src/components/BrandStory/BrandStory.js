@@ -1,11 +1,35 @@
 import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
+import { v4 } from "uuid";
+
 //Css
 import "./BrandStory.css";
 
-//Imgs
-
+//Components
 import ButtonCustom from "../sub-components/Button/ButtonCustom";
+
+//Imgs
+let listSubImg = [];
+for (let i = 1; i <= 7; i+=1) {
+  listSubImg.push({
+    id: v4(),
+    imgTrackNumber: i,
+    img: require(`../../assets/body/brand-story/object-0${i}.png`),
+  });
+}
+
+const renderSubImg = listSubImg.map((img) => {
+  return (
+    <img
+      key={img.id}
+      src={img.img}
+      alt="brand-story-sub-img"
+      className={`brand-story__sub-img--cf-position brand-story__sub-img-${img.imgTrackNumber} img-fluid`}
+    />
+  );
+});
+
+
 export default function BrandStory() {
   const [show, setShow] = useState(false);
 
@@ -68,6 +92,7 @@ export default function BrandStory() {
           </div>
         </div>
       </div>
+      { renderSubImg }
     </div>
   );
 }

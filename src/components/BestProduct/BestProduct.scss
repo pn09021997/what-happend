@@ -5,7 +5,7 @@ $bright-orange: #f96400;
 
 .best-product {
     position: relative;
-    height: 120vh;
+    height: 130vh;
     font-family: $secondary_font_family;
     text-align: center;
 
@@ -48,20 +48,16 @@ $bright-orange: #f96400;
     &__list {
         .best-product-list--pc-ver {
             position: absolute;
-            top: 55.5%;
+            top: 56.5%;
             left: 50%;
             transform: translate(-50%, -50%);
-            padding: 0;
             display: block;
-            width: 80%;
+            width: 100%;
+            padding: 0 4.5%;
         }
 
         .best-product-list--mb-ver {
             display: none;
-
-            .product-item--cf-p {
-                padding: 10%;
-            }
         }
 
         .product-item {
@@ -69,7 +65,8 @@ $bright-orange: #f96400;
             position: relative;
 
             img {
-                width: 100%;
+                max-width: 523px;
+                max-height: 514px;
             }
 
             &__number-track {
@@ -77,8 +74,10 @@ $bright-orange: #f96400;
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
-                width: 4rem;
-                height: 4rem;
+                max-width: 92px;
+                max-height: 92px;
+                width: 100vh;
+                height: 100vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -88,7 +87,7 @@ $bright-orange: #f96400;
                 top: -10%;
 
                 color: $black;
-                font-size: 1.3rem;
+                font-size: 2rem;
                 font-weight: 800;
                 font-stretch: normal;
                 font-style: normal;
@@ -98,7 +97,7 @@ $bright-orange: #f96400;
 
             &__tools {
                 position: absolute;
-                bottom: -10%;
+                bottom: -6%;
                 left: 50%;
                 transform: translate(-50%, 0);
 
@@ -106,49 +105,49 @@ $bright-orange: #f96400;
                 text-align: left;
                 color: $black;
                 background-color: $white;
-                border: solid 3px $dark-maroon;
-                font-size: 2rem;
-                font-weight: 800;
-                width: 70%;
+                border: solid 3px $dark-maroon; 
+                max-width: 369px;
+                max-height: 79px;
+                width: 100vh;
 
                 .content {
-                    margin: .2rem .2rem .2rem 1rem;
+                    margin: 2% 2% 2% 8%;
+                    padding-right: 3%;
+                    max-width: 188px;
+                    font-size: 1.2rem;
+                    font-weight: 800;
                 }
 
                 .btn-go {
-                    width: 4rem;
-                    height: 4rem;
+                    max-width: 66px;
+                    max-height: 65px;
                     cursor: pointer;
-                    margin: .2rem;
+                    margin: 1.5% 0 1.5% 17%;
                 }
             }
         }
     }
 
     @include Responsive(MD) {
+        $best-product-bg: #fcd32a;
         & {
             text-align: left;
             background-image: none;
             background-color: #fcd32a;
-        }
-
-        $best-product-bg: #fcd32a;
-        .best-product-list--pc-ver {
-            display: none;
-        }
-
-        .best-product-list--mb-ver {
-            display: block;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, 0);
-            width: 100%;
-        }
-
-        .best-product {
-            height: 100vh;
+            height: 120vh;
             background-image: none;
             background-color: $best-product-bg;
+
+            &__list {
+                .product-item {
+                    img {
+                        max-width: 523px;
+                        max-height: 514px;
+                        width: 50vh;
+                    }
+                }
+            }
+
 
             &__title {
                 position: static;
@@ -179,6 +178,21 @@ $bright-orange: #f96400;
                     margin: 5%;
                     text-align: right;
                 }
+            }
+        }
+
+        
+        .best-product-list--pc-ver {
+            display: none;
+        }
+
+        .best-product-list--mb-ver {
+            display: block;
+            width: 100%;
+            padding: 0 5%;
+
+            .product-item--cf-p {
+                padding: 10px;
             }
         }
     }

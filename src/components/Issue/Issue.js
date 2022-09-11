@@ -78,7 +78,7 @@ const renderSubImg = listSubImg.map((img) => {
       key={img.id}
       src={img.img}
       alt="issue-sub-img"
-      className={`issue__content-sub-img--cf-position issue__sub-img-${img.imgTrackNumber}`}
+      className={`issue__content-sub-img--cf-position issue__sub-img-${img.imgTrackNumber} img-fluid`}
     />
   );
 });
@@ -113,13 +113,13 @@ export default function Issue() {
         key={v4()}
         src={issueSubImg6}
         alt="issue-sub-img"
-        className="issue__content-sub-img--cf-position issue__sub-img-6"
+        className="issue__content-sub-img--cf-position issue__sub-img-6 img-fluid" 
       />
       <img
         key={v4()}
         src={issueSubImg2}
         alt="issue-sub-img"
-        className="issue__content-sub-img--cf-position issue__sub-img-2"
+        className="issue__content-sub-img--cf-position issue__sub-img-2 img-fluid"
       />
     </div>
   );

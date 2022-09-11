@@ -1,0 +1,113 @@
+hr {
+  margin: 1rem 6.9rem !important;
+  background-color: #f4f4f4;
+}
+
+.advertisement {
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  color: #111111;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  padding: 10% 0%;
+  margin-bottom: 15%;
+}
+
+.advertisement__content-sub-img--cf-position {
+  position: absolute;
+}
+
+.advertisement .advertisement__sub-img-5 {
+  top: 0;
+  left: 11%;
+}
+
+.advertisement .advertisement__sub-img-7 {
+  max-width: 300px;
+  max-height: 400px;
+  height: 100vh;
+  top: 24%;
+  left: -10%;
+}
+
+.advertisement .advertisement__sub-img-3 {
+  top: 84%;
+  left: 10%;
+}
+
+.advertisement .advertisement__sub-img-1 {
+  top: 91%;
+  left: 17%;
+}
+
+.advertisement .advertisement__sub-img-2 {
+  top: 93%;
+  left: 55%;
+}
+
+.advertisement .advertisement__sub-img-4 {
+  max-width: 395px;
+  max-height: 474px;
+  right: 0%;
+  top: 70%;
+}
+
+.advertisement .advertisement__sub-img-6 {
+  max-width: 175px;
+  max-height: 315px;
+  right: 0%;
+  top: 58.9%;
+}
+
+.advertisement .advertisement__sub-img-8 {
+  top: 20%;
+  right: 12%;
+}
+
+.advertisement .advertisement__sub-img-9 {
+  top: 10%;
+  right: 4%;
+}
+
+.advertisement__title {
+  margin-bottom: 5%;
+}
+
+.advertisement__title h2 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.advertisement__title-content {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  max-width: 665px;
+  margin: 2rem auto;
+}
+
+.advertisement__title button {
+  margin: 1.8rem 0;
+}
+
+.advertisement__content-main-img {
+  max-height: 735px;
+  z-index: 99;
+}
+
+@media only screen and (max-width: 1024px) {
+  .advertisement__title {
+    padding: 0 5%;
+  }
+  .advertisement__content-sub-img--cf-position {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Advertisement.css.map */

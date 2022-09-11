@@ -1,9 +1,54 @@
+hr {
+  margin: 1rem 6.9rem !important;
+  background-color: #f4f4f4;
+}
+
 .brand-story {
   height: 100%;
   background-color: #0565bb;
   text-align: center;
   color: #fcd32a;
+  position: relative;
   padding: 10% 0;
+}
+
+.brand-story__sub-img--cf-position {
+  position: absolute;
+}
+
+.brand-story__sub-img-1 {
+  top: 20%;
+  left: 6%;
+}
+
+.brand-story__sub-img-7 {
+  top: 50%;
+  left: 11.4%;
+}
+
+.brand-story__sub-img-6 {
+  top: 45%;
+  left: 0%;
+}
+
+.brand-story__sub-img-4 {
+  top: 25%;
+  right: 0%;
+}
+
+.brand-story__sub-img-5 {
+  top: 55%;
+  right: 0%;
+}
+
+.brand-story__sub-img-3 {
+  top: 8%;
+  right: 10%;
+}
+
+.brand-story__sub-img-2 {
+  top: 2%;
+  right: 15%;
 }
 
 .brand-story__title {
@@ -37,13 +82,14 @@
 
 .brand-story__content .brand-story__content-main {
   text-align: left;
-  background-image: url("../../assets/body/story-banner/window.png");
+  z-index: 1;
+  background-image: url("../../assets/body/brand-story/window.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100vh;
-  max-width: 1251px;
-  max-height: 418px;
+  max-width: 1151px;
+  max-height: 400px;
   position: relative;
   margin: 0 auto;
 }
@@ -100,6 +146,9 @@
 @media only screen and (max-width: 1024px) {
   .brand-story {
     padding: 10% 5%;
+  }
+  .brand-story__sub-img--cf-position {
+    display: none;
   }
   .brand-story .brand-story__content-main {
     height: 20vh;

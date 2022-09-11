@@ -1,0 +1,122 @@
+@import "../../App.scss";
+
+.advertisement {
+    height: 100%;
+    background-color: $white;
+    text-align: center;
+    color: $black-two;
+    position: relative;
+    font-family: $secondary_font_family;
+
+    padding: 10% 0%;
+    margin-bottom: 15%;
+
+    &__content-sub-img--cf-position {
+        position: absolute;
+    }
+
+
+    .advertisement__sub-img {
+        &-5 {
+            top: 0;
+            left: 11%;
+        }
+
+        &-7 {
+            max-width: 300px;
+            max-height: 400px;
+            height: 100vh;
+            top: 24%;
+            left: -10%;
+        }
+
+
+        &-3 {
+            top: 84%;
+            left: 10%;
+        }
+
+        &-1 {
+            top: 91%;
+            left: 17%;
+        }
+
+        &-2 {
+            top: 93%;
+            left: 55%;
+        }
+
+        &-4 {
+            max-width: 395px;
+            max-height: 474px;
+            right: 0%;
+            top: 70%;
+        }
+
+
+        &-6 {
+            max-width: 175px;
+            max-height: 315px;
+            right: 0%;
+            top: 58.9%;
+        }
+
+        &-8 {
+            top: 20%;
+            right: 12%;
+        }
+        &-9 {
+            top: 10%;
+            right: 4%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 5%;
+
+        h2 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+        }
+
+        &-content {
+            font-size: 1.2rem;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.88;
+            letter-spacing: normal;
+
+            max-width: 665px;
+            margin: 2rem auto;
+        }
+
+        button {
+            margin: 1.8rem 0;
+        }
+    }
+
+    &__content {
+        &-main-img {
+            max-height: 735px;
+            z-index: 99;
+        }
+    }
+
+    @include Responsive(MD) {
+        & {
+            &__title {
+                padding: 0 5%;
+            }
+
+            &__content {
+                &-sub-img--cf-position {
+                    display: none;
+                }
+            }
+        }
+    }
+}

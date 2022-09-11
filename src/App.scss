@@ -5,12 +5,14 @@ $secondary_font_family: 'Montserrat', sans-serif;
 
 //colors
 $white: #fff;
+$white-three: #f4f4f4;
 $black: #000;
 $dark-maroon: #020001;
 $black-three: #222222;
 $black-two: #111111;
 $dark-brown: #110e03;
 $pinkish-grey: #ccc8c6;
+$greyish: #a9a9a9;
 $cerulean: #0565bb;
 $sun-yellow: #fcd32a;
 $goldenrod: #fccb05;
@@ -37,4 +39,9 @@ $XL:   1170px;
   @else if $canvas == XL {
    @media only screen and (max-width: $XL) { @content; } 
   }
+}
+
+hr {
+  margin: 1rem 6.9rem !important;
+  background-color: $white-three;
 }
