@@ -37,8 +37,8 @@
         }
 
         &-1 {
-            top: 91%;
-            left: 17%;
+            left: 3%;
+            top: 20%;
         }
 
         &-2 {
@@ -114,6 +114,10 @@
             }
 
             &__content {
+                &-main-img {
+                    max-width: 100%;
+                }
+
                 &-sub-img--cf-position {
                     display: none;
                 }

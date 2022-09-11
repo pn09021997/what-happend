@@ -37,8 +37,8 @@ hr {
 }
 
 .advertisement .advertisement__sub-img-1 {
-  top: 91%;
-  left: 17%;
+  left: 3%;
+  top: 20%;
 }
 
 .advertisement .advertisement__sub-img-2 {
@@ -106,6 +106,9 @@ hr {
 @media only screen and (max-width: 1024px) {
   .advertisement__title {
     padding: 0 5%;
+  }
+  .advertisement__content-main-img {
+    max-width: 100%;
   }
   .advertisement__content-sub-img--cf-position {
     display: none;

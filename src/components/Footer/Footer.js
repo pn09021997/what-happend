@@ -99,7 +99,7 @@ export default function FooterCustom() {
 
       <div className="footer__corp-content">
         <Row>
-          <Col md={7}>
+          <Col md={8}>
             <p className="footer__corp">
               © 2020-2021 what happened corp l (주) 왓헤픈 ｜ 대표자 : 홍길동 ｜
               사업자 등록번호 : 356-00-00000 ㅣ test0101@what happened.co.kr
@@ -107,7 +107,7 @@ export default function FooterCustom() {
               이용약관 l 개인정보처리방침
             </p>
           </Col>
-          <Col md={5}>
+          <Col md={4}>
             <div className="footer__social">
               <ul className="footer__social-content">{renderSocialsIcon}</ul>
             </div>
