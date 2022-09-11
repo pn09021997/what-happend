@@ -1,6 +1,11 @@
 # NAME
 
-Nguyen Quoc Phuong
+Nguyen Quoc Phuong\
+Thu Duc College Of Technology
+
+### PROJECT
+What Happened market
+
 ### TIME TO COMPLETE
 Total: 4 Day\
 Start: 08/09/2022\
