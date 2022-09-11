@@ -37,8 +37,8 @@ hr {
 }
 
 .advertisement .advertisement__sub-img-1 {
-  left: 3%;
-  top: 20%;
+  top: 91%;
+  left: 17%;
 }
 
 .advertisement .advertisement__sub-img-2 {
@@ -108,7 +108,7 @@ hr {
     padding: 0 5%;
   }
   .advertisement__content-main-img {
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .advertisement__content-sub-img--cf-position {
     display: none;
