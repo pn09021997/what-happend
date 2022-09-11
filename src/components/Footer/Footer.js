@@ -16,7 +16,7 @@ for (let i = 1; i <= 3; i += 1) {
 
 const renderSocialsIcon = listSocialIcon.map((icon) => {
   return (
-    <li className="footer__social-item">
+    <li className="footer__social-item" key={v4()}>
       <img
         key={icon.id}
         src={icon.icon}
@@ -35,7 +35,7 @@ export default function FooterCustom() {
           <Col md={6}>
             <p className="footer__title">what happened</p>
             <ul className="footer__content">
-              <li className="footer__content-item item1">
+              <li className="footer__content-item item1" key={v4()}>
                 [공지] 개인 정보 처리 방침 변경 사전 안내 [공지] 29CM 강남
                 스토어 영업 종료 [공지] 개인 정보 처리 방침 변경 사전 안내
                 [공지] iOS 10 이하 버전 지원 중단 안내 [공지] 개인 정보 처리
@@ -49,7 +49,7 @@ export default function FooterCustom() {
                 <div className="footer__content-item--float-right">
                   <p className="footer__title">about us</p>
                   <ul className="footer__content">
-                    <li className="footer__content-item item2">
+                    <li className="footer__content-item item2" key={v4()}>
                       회사 소개 인재 채용 상시 할인 혜택
                     </li>
                   </ul>
@@ -60,7 +60,7 @@ export default function FooterCustom() {
                 <div className="footer__content-item--float-right">
                   <p className="footer__title">my order</p>
                   <ul className="footer__content">
-                    <li className="footer__content-item item3">
+                    <li className="footer__content-item item3" key={v4()}>
                       내 주문 주문 배송 취소 / 교환 / 반품 내역 상품 리뷰 내역
                       증빙 서류 발급
                     </li>
@@ -69,10 +69,10 @@ export default function FooterCustom() {
               </Col>
               <Col md={3}>
                 {" "}
-                <div className="footer__content-item--float-right">
+                <div className="footer__content-item--float-right" >
                   <p className="footer__title">my account</p>
                   <ul className="footer__content">
-                    <li className="footer__content-item item4">
+                    <li className="footer__content-item item4" key={v4()}>
                       회원 정보 수정 회원 등급 마일리지 현황 쿠폰
                     </li>
                   </ul>
@@ -83,7 +83,7 @@ export default function FooterCustom() {
                 <div className="footer__content-item--float-right">
                   <p className="footer__title">help</p>
                   <ul className="footer__content">
-                    <li className="footer__content-item item5">
+                    <li className="footer__content-item item5" key={v4()}>
                       1 : 1 상담 내역 상품 Q & A 내역 공지 사항 자주하는 질문
                       고객의 소리
                     </li>
