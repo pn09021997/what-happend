@@ -81,6 +81,7 @@ const renderBrand_MBVer = listBrand.map((brand) => {
             <p> {brand.brandName} </p>
           </div>
           <img
+            key={brand.id}
             src={brand.img}
             alt="issue-img"
             className="img-fluid issue__content-brand-img"
