@@ -136,14 +136,6 @@ export default function Issue() {
       </div>
       <div className="issue-brand--mb-ver">
         <Carousel>
-          <Carousel.Item className="">
-            <div className="issue__content-box issue__content-main">
-              <div className="content--centered">
-                <p className="issue__content-main-title"> WHPN ISSUE </p>
-                <img src={issueMainImg} alt="issue-img" className="img-fluid" />
-              </div>
-            </div>
-          </Carousel.Item>
           { renderBrand_MBVer }
         </Carousel>
       </div>
